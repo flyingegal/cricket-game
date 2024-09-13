@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CRICKET GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>BAT BOAL AND STUMP GAME</h1>
+    <main class="body">
+        <button class="button_class" onclick="
+        let computerMove = generateComputerChoice();
+        let resultMsg = getResult ( 'Bat', computerMove );
+        showResult ('Bat', computerMove,resultMsg);
+        "><img src="assets/bat.png" alt="Bat image" class="image">
+        </button>
+        <button class="button_class" onclick=" 
+        computerMove = generateComputerChoice();
+        resultMsg = getResult ( 'Ball', computerMove );
+        showResult ('Ball', computerMove,resultMsg);
+        "><img src="assets/ball.png" alt="Ball image" class="image">
+        </button>
+        <button class="button_class" onclick="
+        computerMove = generateComputerChoice();
+        resultMsg = getResult ( 'Stump', computerMove );
+        showResult ('Stump', computerMove,resultMsg);
+        "><img src="assets/stump-removebg-preview.png" alt="Stump image" class="image">
+        </button>
+       
+        <div>
+        <h1 class="user_move"></h1>
+        <h1 class="computer_move"></h1>
+        <h1 class="result"></h1>
+        <h1 class="score"></h1>
+        </div>
+        <button class="button_class" onclick="localStorage.clear()
+        resetScore();"
+       ><img src="assets/reset.png" alt="Bat image" class="image">
+       </button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

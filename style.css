@@ -1,0 +1,14 @@
+*{
+    text-align: center;
+}
+.button_class{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.image{
+    height: 85px;
+}
